@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 20rem 50rem;
+}
+
+.grid-container-rows {
+  display: grid;
+  grid-template-rows: 3rem auto;
+}
+
+/* .grid-container-tab {
+  display: grid;
+  grid-template-rows: 3rem auto;
+} */
+
+.grid-container-tabdisplay {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-container-tabdisplay h4 {
+  margin: 0 2rem 0 2rem;
+}
+
+.inner-body {
+  height: 30rem;
+  width: 70rem;
+  background-color: grey;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.inner-body h2 {
+  padding: 1rem 0 0 1rem;
+  width: 15rem;
+  text-align: center;
+}
+
+.event-box {
+  width: 15rem;
+  background-color: rgb(229, 228, 226);
+  height: 2.5rem;
+  position: inherit;
+  margin: 0.5rem 0 0 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
+@keyframes eventBoxTimeout {
+  0% {
+    box-shadow: none;
+  }
+  25% {
+    box-shadow: 0 2px 4px 1px rgba(243, 241, 241, 0.829);
+  }
+  75% {
+    box-shadow: none;
+  }
+}
+.event-box-click-odd {
+  box-shadow: 0 2px 4px 1px rgba(243, 241, 241, 0.829);
+}
+
+.event-box-click-even {
+  box-shadow: none;
+}
+
+.body-event-list {
+  list-style-type: none;
+  height: 27rem;
+  overflow: hidden;
+  overflow-y: scroll;
+  width: 18rem;
+}
+
+.body-event-list::-webkit-scrollbar,
+.tab-content::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #bdb9b9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.tab-heading {
+  background-color: rgb(216, 206, 193);
+  margin-top: 0.5rem;
+  height: 1.5rem;
+  width: 8rem;
+  padding: 0.3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: rgb(233, 214, 214);
+}
+.tab-content {
+  height: 26.5rem;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.tab-style-clicked {
+  box-shadow: 2px -2px 5px rgba(10, 10, 10, 0.616);
+  width: 8.3rem !important;
+  height: 1.8rem !important;
+}
+
+.tab-style-clicked-gt5 {
+  box-shadow: 2px -2px 5px rgba(10, 10, 10, 0.616);
+  width: 6.3rem !important;
+  height: 1.8rem !important;
+}
+
+.tab-style-clicked-gt7 {
+  box-shadow: 2px -2px 5px rgba(10, 10, 10, 0.616);
+  width: 4.3rem !important;
+  height: 1.8rem !important;
+}
